@@ -1,0 +1,46 @@
+.featured-value {
+    .value-item {
+        padding: 30px;
+        transition: all ease-in-out 0.4s;
+        background: $color-white;
+        height: 100%;
+
+        .icon {
+            margin-bottom: 10px;
+
+            i {
+                color: $color-primary;
+                font-size: 36px;
+                transition: 0.3s;
+            }
+        }
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 24px;
+
+            a {
+                color: $color-secondary;
+                transition: ease-in-out 0.3s;
+            }
+        }
+
+        p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 0 60px 0 rgba($color-secondary-rgb, 0.1);
+
+            h4 {
+                a {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

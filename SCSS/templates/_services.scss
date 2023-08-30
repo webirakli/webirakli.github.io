@@ -1,0 +1,98 @@
+.services {
+
+	.nav-tabs {
+		border: 0;
+	}
+
+	.nav-link {
+		border: 0;
+		padding: 25px 20px;
+		color: $color-secondary;
+		box-shadow: 5px 5px 25px rgba($color-secondary-rgb, 0.15);
+		border-radius: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		transition: 0s;
+		cursor: pointer;
+		height: 100%;
+
+		i {
+			font-size: 32px;
+			line-height: 0;
+		}
+
+		h4 {
+			font-size: 20px;
+			font-weight: 600;
+			margin: 10px 0 0 0;
+			color: $color-secondary;
+		}
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	.nav-link.active {
+		transition: 0.3s;
+		background: $color-secondary linear-gradient(rgba($color-primary-rgb, 0.95), rgba($color-primary-rgb, 0.6));
+		border-color: $color-primary;
+
+		h4 {
+			color: $color-white;
+		}
+
+		i {
+			color: $color-white !important;
+		}
+	}
+
+	.tab-content {
+		margin-top: 30px;
+	}
+
+	.tab-pane.active {
+		animation: fadeIn 0.5s ease-out;
+	}
+
+	.tab-pane {
+		h3 {
+			font-weight: 600;
+			font-size: 36px;
+			color: $color-secondary;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				padding-bottom: 10px;
+			}
+
+			i {
+				font-size: 24px;
+				margin-right: 4px;
+				color: $color-primary;
+			}
+		}
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
